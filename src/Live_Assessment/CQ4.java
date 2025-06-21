@@ -3,28 +3,24 @@ package Live_Assessment;
 public class CQ4 {
 
     public static void main(String[] args) {
+        int number = 5;
+        System.out.println("Original: " + number);  // 5
 
-        // Implicit Casting (Widening)
-        int intVal = 100;
-        long longVal = intVal;          // int to long
-        float floatVal = longVal;       // long to float
+        // Pre-increment
+        ++number;  // number becomes 6
+        System.out.println("Pre-increment: " + number);  // 6
 
-        System.out.println("Implicit Type Casting (Widening):");
-        System.out.println("int value: " + intVal);
-        System.out.println("long value (from int): " + longVal);
-        System.out.println("float value (from long): " + floatVal);
+        // Post-increment
+        int postInc = number++; // postInc = 6, number becomes 7
+        System.out.println("Post-increment: " + postInc + " (returned " + postInc + ")");
 
-        System.out.println(); // Line break
+        // Pre-decrement
+        --number; // number becomes 6
+        --number; // number becomes 5
+        System.out.println("Pre-decrement: " + number); // 5
 
-        // Explicit Casting (Narrowing)
-        double doubleVal = 99.99;
-        int intFromDouble = (int) doubleVal;    // double to int (fraction lost)
-        byte byteFromInt = (byte) intFromDouble; // int to byte
-
-        System.out.println("Explicit Type Casting (Narrowing):");
-        System.out.println("double value: " + doubleVal);
-        System.out.println("int value (from double): " + intFromDouble);
-        System.out.println("byte value (from int): " + byteFromInt);
+        // Post-decrement
+        int postDec = number--; // postDec = 5, number becomes 4
+        System.out.println("Post-decrement: " + postDec + " (returned " + postDec + ")");
     }
-
 }

@@ -3,23 +3,18 @@ package Live_Assessment;
 public class CQ3 {
 
     public static void main(String[] args) {
-        int i = 5;
 
-        // Post-increment: value used first, then incremented
-        System.out.println("Post-increment (i++):");
-        System.out.println("Before: i = " + i);
-        System.out.println("Result of i++: " + (i++));
-        System.out.println("After: i = " + i);
+        int a = 20;
+        int b = 10;
 
-        System.out.println(); // line break
+        // Comparison operators
+        System.out.println("a == b: " + (a == b));       // false
+        System.out.println("a > b: " + (a > b));         // true
+        System.out.println("a < b: " + (a < b));         // false
 
-        i = 5; // reset i for pre-increment demo
-
-        // Pre-increment: value incremented first, then used
-        System.out.println("Pre-increment (++i):");
-        System.out.println("Before: i = " + i);
-        System.out.println("Result of ++i: " + (++i));
-        System.out.println("After: i = " + i);
+        // Logical operators
+        System.out.println("(a > b) && (a > 0): " + ((a > b) && (a > 0)));  // true
+        System.out.println("(a < b) || (a > 0): " + ((a < b) || (a > 0)));  // true
+        System.out.println("!(a > b): " + !(a > b));                        // false
     }
-
 }
